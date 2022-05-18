@@ -19,7 +19,7 @@ function splitSentence(frase) {
   //let split = frase.split(' ');
   //let palavras = [];
   //for (index = 0; index < split.length; index +=1){
-  // palavras.push(split[index]);}
+  //palavras.push(split[index]);}
   //return (palavras);
   return frase.split(' ');
   // seu código aqui
@@ -38,8 +38,15 @@ function concatName(names) {
 
 
 // Desafio 5
-function footballPoints() {
+function footballPoints(wins,ties) {
+  let winPoints = [];
+  let tiePoints = [];
+  let result = wins*3+ties;
+  //winPoints.push(wins);
+ // tiePoints.push(ties);
+  return result;
   // seu código aqui
+  
 }
 
 // Desafio 6
