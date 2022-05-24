@@ -97,7 +97,21 @@ function decode(frase) {
 }
 
 // Desafio 10
-function techList() {
+function techList(tec, nome) {
+  let lista = [];
+  tec.sort();
+  if (tec.length == 0 || nome === 0){
+    return 'Vazio!';
+  } else{
+    for (index = 0; index < tec.length; index += 1){
+      lista.push({
+        tech: tec[index],
+        name: nome
+      })
+     }
+  }
+  return lista;
+
   // seu código aqui
 }
 
