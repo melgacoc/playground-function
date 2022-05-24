@@ -8,7 +8,7 @@ function compareTrue(ele1, ele2) {
 
 // Desafio 2
 function calcArea(base, height) {
-  let resultado = (base * height) / 2
+  let resultado = (base * height) / 2;
   return resultado;
   
   // seu código aqui
@@ -39,23 +39,28 @@ function concatName(names) {
 
 // Desafio 5
 function footballPoints(wins,ties) {
-  let winPoints = [];
-  let tiePoints = [];
   let result = wins*3+ties;
-  //winPoints.push(wins);
- // tiePoints.push(ties);
   return result;
   // seu código aqui
   
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(numbers) {
   // seu código aqui
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
+  let gato1 = cat1 - mouse;
+  let gato2 = cat2 - mouse;
+  let v1 = Math.abs(gato1);
+  let v2 = Math.abs(gato2);
+  if (v1 < v2) {
+    return 'cat1';
+  } else if (v1 > v2) {
+    return 'cat2';
+  } else return 'os gatos trombam e o rato foge';
   // seu código aqui
 }
 
